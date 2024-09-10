@@ -428,7 +428,12 @@ button.button-link {
 .mini-detail p {
     font-family: 'Rubik', sans-serif;
     line-height: 1.8;
-    color: #b7b7b7;
+    color: #414040;
+}
+.mini-detailBlanco p {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.8;
+    color: #c9c9c9;
 }
 .r-text {
     top: 0;
@@ -545,7 +550,7 @@ button.button-link {
 .inner-detailido p {
     font-family: 'Rubik', sans-serif;
     line-height: 1.8;
-    color: #b7b7b7;
+    color: #3a3939;
 }
 #wrapido .owl-stage-outer {
     padding-bottom: 100px;
