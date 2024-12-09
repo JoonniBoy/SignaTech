@@ -34,6 +34,26 @@
     <link href="css/themes.css" rel="stylesheet">
     <!-- RESPONSIVE CSS -->
     <link href="css/responsive.css" rel="stylesheet">
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Manejar el evento de clic en el enlace de descarga
+            document.getElementById('downloadLink').addEventListener('click', function(event) {
+                event.preventDefault(); // Previene la acción por defecto del enlace
+
+                // Forzar la descarga del archivo desde Google Drive
+                const link = document.createElement('a');
+                link.href = "https://drive.google.com/uc?export=download&id=14ipLq01dn_Oh97AjI57yLiKk9S1-g9xJ";
+                link.download = "SignaTechMovil.apk";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        });
+    </script>
+
+    
 </head>
 
 <body>
@@ -349,6 +369,17 @@
                                 <p>Descarga nuestra aplicación móvil en Android.</p>
                                 <img src="image/asset/iconosignatechmovil.png" alt="porto" style="width: 100%; border-radius: 10px; display: block; margin: 0 auto;"/>
                                 <a href="Docs/SignaTechMovil.apk" class="button-link dark-b llinks" style="display: block; text-align: center;" download>Descargar</a>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="part-col">
+                            <a class="image-popup gallery-link" href="image/asset/iconosignatechmovil.png">
+                                <h3>Descargar</h3>
+                                <p>Descarga nuestra aplicación móvil en Android.</p>
+                                <img src="image/asset/iconosignatechmovil.png" alt="porto" style="width: 100%; border-radius: 10px; display: block; margin: 0 auto;"/>
+                                <a href="#" class="button-link dark-b llinks" style="display: block; text-align: center;" id="downloadLink">Descargar</a>
                             </a>
                         </div>
                     </div>
